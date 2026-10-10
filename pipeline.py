@@ -86,8 +86,8 @@ PAGE_SIZE = int(os.getenv("PAGE_SIZE", "500"))  # Rows per API call. Check vendo
 LOOKBACK_DAYS = int(os.getenv("LOOKBACK_DAYS", "3"))
 
 # Where the data lands in Snowflake. Database.Schema.Table.
-SF_DB = os.getenv("SF_DATABASE", "PC_FIVETRAN_DB")
-SF_SCHEMA = os.getenv("SF_SCHEMA", "CUSTOM_DATA_PIPELINES")
+SF_DB = os.getenv("SF_DATABASE", "RAW_DB")
+SF_SCHEMA = os.getenv("SF_SCHEMA", "VENDOR_API")
 SF_TABLE = os.getenv("SF_TABLE", "VENDOR_RECORDS")
 
 # MERGE_KEYS: the column(s) that uniquely identify a row (the "natural key").
